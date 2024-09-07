@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL:'http://localhost:8080', 
+    baseURL:'https://movies-backend-production-ae28.up.railway.app/', 
     timeout:20000,
     headers:{"Content-Type":"application/json"}
 });

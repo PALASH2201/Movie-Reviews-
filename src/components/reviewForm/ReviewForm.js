@@ -5,7 +5,9 @@ const ReviewForm = ({ handleSubmit, revText, labelText, defaultValue }) => {
   const [reviewBody, setReviewBody] = useState(defaultValue);
 
   const handleChange = (e) => {
-    setReviewBody(e.target.value);
+    const body = e.target.value;
+    e.target.value="";
+    setReviewBody(body);
   };
 
   return (
